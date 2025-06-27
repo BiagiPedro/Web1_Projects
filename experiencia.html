@@ -1,58 +1,125 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Currículo de Fulano de Tal</title>
-</head>
-<body>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Currículo Cristiano Ronaldo</title>
+        <style>
+        table {
+            width: 100%; /* Faz a tabela ocupar toda a largura disponível */
+            border-collapse: collapse; /* Colapsa as bordas das células em uma única linha */
+            margin-top: 20px; /* Adiciona um espaço acima da tabela */
+        }
 
-    <header>
-        <h1>Experiência Profissional</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Página principal</a></li>
-            </ul>
-        </nav>
-    </header>
+        th, td {
+            border: 1px solid #ddd; /* Adiciona uma borda sólida de 1px cinza claro */
+            padding: 8px; /* Espaçamento interno das células */
+            text-align: left; /* Alinha o texto à esquerda */
+        }
 
-    <main>
-        <!-- Imagem local obrigatória -->
-        <figure>
-            <img src="experiencia.png" alt="Imagem ilustrativa de experiência profissional" width="200">
-            <figcaption>Projeto fictício em equipe</figcaption>
-        </figure>
+        th {
+            background-color: #f2f2f2; /* Cor de fundo para os cabeçalhos */
+        }
 
-        <!-- Tabela com detalhes das experiências -->
-        <table>
-            <caption>Resumo das Experiências</caption>
-            <thead>
-                <tr>
-                    <th>Cargo</th>
-                    <th>Empresa</th>
-                    <th>Período</th>
-                    <th>Principais Atividades</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Estagiário de Desenvolvimento</td>
-                    <td><a href="https://www.empresaexemplo.com" target="_blank">Empresa Exemplo</a></td>
-                    <td>2023 – 2024</td>
-                    <td>Criação de páginas HTML estáticas e manutenção de repositórios Git.</td>
-                </tr>
-                <tr>
-                    <td>Auxiliar de Suporte</td>
-                    <td><a href="https://www.techsupport.com" target="_blank">Tech Support</a></td>
-                    <td>2022 – 2023</td>
-                    <td>Atendimento a usuários e configuração de redes locais.</td>
-                </tr>
-            </tbody>
-        </table>
+        tr:nth-child(even) {
+            background-color: #f9f9f9; /* Adiciona uma cor de fundo diferente para linhas pares (efeito zebrado) */
+        }
+    </style>
+    </head>
+    <body>
 
-        <p><a href="index.html">← Voltar para a página principal</a></p>
-    </main>
+        <header>
+            <h1>Experiência Profissional</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Página principal</a></li>
+                </ul>
+            </nav>
+        </header>
 
+        <main>
+            <!-- Imagem local obrigatória -->
+            <figure>
+                <img src="images/cr7.jpg" alt="Foto de perfil" width="500" height="100">
 
+            <!-- Tabela com detalhes das experiências -->
+            <table>
+                <caption>Resumo da Carreira Profissional</caption>
+                <thead>
+                    <tr>
+                        <th>Equipe</th>
+                        <th>Período</th>
+                        <th>Principais Conquistas</th>
+                        <th>Estatísticas Chave</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sporting CP</td>
+                        <td>2002 – 2003</td>
+                        <td></td>
+                        <td>5 gols em 31 jogos</td>
+                    </tr>
+                    <tr>
+                        <td>Manchester United</td>
+                        <td>2003 – 2009</td>
+                        <td>
+                            <ul>
+                                <li>3x Premier League</li>
+                                <li>1x Liga dos Campeões da UEFA</li>
+                                <li>1x Mundial de Clubes da FIFA</li>
+                                <li>1x FA Cup</li>
+                            </ul>
+                        </td>
+                        <td>118 gols em 292 jogos</td>
+                    </tr>
+                    <tr>
+                        <td>Real Madrid</td>
+                        <td>2009 – 2018</td>
+                        <td>
+                            <ul>
+                                <li>4x Liga dos Campeões da UEFA</li>
+                                <li>2x La Liga</li>
+                                <li>2x Copa do Rei</li>
+                                <li>3x Mundial de Clubes da FIFA</li>
+                                <li>4x Bola de Ouro (durante o período)</li>
+                            </ul>
+                        </td>
+                        <td>450 gols em 438 jogos</td>
+                    </tr>
+                    <tr>
+                        <td>Juventus</td>
+                        <td>2018 – 2021</td>
+                        <td>
+                            <ul>
+                                <li>2x Serie A</li>
+                                <li>1x Copa da Itália</li>
+                                <li>1x Supercopa da Itália</li>
+                            </ul>
+                        </td>
+                        <td>101 gols em 134 jogos</td>
+                    </tr>
+                    <tr>
+                        <td>Manchester United</td>
+                        <td>2021 – 2022</td>
+                        <td></td>
+                        <td>27 gols em 54 jogos</td>
+                    </tr>
+                    <tr>
+                        <td>Al Nassr FC</td>
+                        <td>2023 – Atualmente</td>
+                        <td>
+                            <ul>
+                                <li>1x Liga dos Campeões Árabes</li>
+                            </ul>
+                        </td>
+                        <td>Mais de 60 gols em mais de 70 jogos (em
+                            andamento)</td>
+                    </tr>
+                </tbody>
+            </table>
 
-</body>
+        </main>
+
+    </body>
 </html>
