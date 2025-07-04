@@ -1,0 +1,155 @@
+/* ==== TRABALHO 2 - ESTILO GERAL ==== */
+
+/* * Requisito: A fonte do texto deve ser alterada.
+ * Requisito: O texto deve ter espaçamento entre linhas de 1,5.
+ * Requisito: A cor do fundo do elemento <body> deve ser alterada.
+ * Seletor Utilizado: Seletor de Tipo (body)
+ */
+body {
+    font-family: Verdana, Arial, sans-serif; /* [cite: 553, 555] */
+    line-height: 1.5; /*  */
+    background-color: #e9e9e9; /* [cite: 880, 881, 882] */
+    color: #333;
+}
+
+/*
+ * Requisito: O conteúdo do corpo deve ocupar 60% da largura e ser centralizado.
+ * Seletor Utilizado: Seletor de Classe (.container)
+ */
+.container {
+    width: 60%;
+    margin: 0 auto; /* [cite: 1350] */
+    padding: 2% 0;
+}
+
+/*
+ * Requisito: A parte principal da página deve ter fundo branco.
+ * Requisito: A parte principal da página deve possuir bordas com cantos arredondados.
+ * Requisito: As propriedades de margin, padding e border devem ser alteradas.
+ * Seletor Utilizado: Seletor de Classe (.main-content)
+ */
+.main-content {
+    background-color: white;
+    padding: 25px; /* [cite: 684] */
+    border: 1px solid #ccc; /* [cite: 751] */
+    border-radius: 10px; /* [cite: 790, 791] */
+}
+
+/*
+ * Requisito: Todos os títulos devem ter a mesma cor.
+ * Seletor Utilizado: Seletor de Tipo Agrupado (h1, h2, caption)
+ */
+h1, h2, caption {
+    color: #003366;
+}
+
+/*
+ * Requisito: Estilize o menu de navegação (nav) incluindo a propriedade “display: inline-block”.
+ * Seletor Utilizado: Seletor de Descendente (nav ul li)
+ */
+nav ul li {
+    display: inline-block; /* [cite: 921, 922, 923, 924] */
+    margin-right: 20px;
+}
+
+/*
+ * Requisito: Utilizar a propriedade :hover (pseudo-classe).
+ * Seletor Utilizado: Seletor de Pseudo-classe (a:hover)
+ */
+nav a:hover {
+    text-decoration: none; /* [cite: 461] */
+    color: #ff4500;
+}
+
+/*
+ * Requisito: Utilizar a propriedade float.
+ * Seletor Utilizado: Seletor de ID (#profile-pic) e Seletor de Classe (.floated-image)
+ */
+#profile-pic {
+    float: left; /* [cite: 1130, 1133] */
+    margin-right: 20px;
+    border-radius: 50%; /* Deixa a foto de perfil redonda */
+}
+
+.floated-image {
+    float: left; /* [cite: 1130, 1133] */
+    margin: 0 20px 10px 0;
+    border-radius: 8px;
+}
+
+/*
+ * Estilização da tabela da página experiencia.html (código original mantido e integrado)
+ * Seletor Utilizado: Seletor de Tipo (table, th, td) e Seletor de Pseudo-classe (tr:nth-child)
+ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) { /* [cite: 488] */
+    background-color: #f9f9f9;
+}
+
+
+/*
+ * Estilização para o formulário na página contato.html
+ * Seletor Utilizado: Seletor de Atributo (input[type="..."])
+ */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="Dinehiro"],
+select,
+textarea {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/*
+ * Estilização para o formulário na página contato.html
+ * Requisito: Utilizar a propriedade :focus (pseudo-classe).
+ * Seletor Utilizado: Seletor de Atributo com Pseudo-classe.
+ */
+input[required]:focus, textarea:focus { /* [cite: 466] */
+    border-color: #003366;
+    box-shadow: 0 0 5px rgba(0, 51, 102, 0.5); /* [cite: 818] */
+}
+
+button[type="submit"] {
+    background-color: #003366;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0055a4;
+}
+
+/*
+ * Requisito: Utilizar a propriedade position.
+ * Seletor Utilizado: Seletor de ID (#footer-note)
+ */
+#footer-note {
+    position: relative; /* [cite: 1177, 1178, 1179] */
+    top: 10px;
+    font-style: italic;
+    font-size: 0.9em;
+    text-align: center;
+}
